@@ -1,11 +1,22 @@
-
-
-
-button {
+.num {
   border-radius: 2px;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   color: white;
   font-size: 25px;
-  background-color: green;
+  background-color: grey;
+  box-shadow: 3px -3px 7px rgba(0,0,0,0.6), inset 0px 50px 10px rgba(119, 66, 66, 0.6);
+}
+
+.calculatorHead {
+  font-size: 15px;
+  color: rgba(7, 5, 5, 0.6);
+}
+
+/* .calculatorFirstRow, .calculatorSecondRow, .calculatorThirdRow{
+  width: 600px;
+} */
+
+Container{
+  width:100px;
 }

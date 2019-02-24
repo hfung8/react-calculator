@@ -1,24 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-var Buttons;
+// import ReactDOM from 'react-dom';
+import Button from "./Button";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-Buttons = () => {
+const Calculator = () => {
   return (
     <div>
-      <button className="num" value={1}></button>
-      <button className="num" value={2}></button>
-      <button className="num" value={3}></button>
-      <button className="num" value={4}></button>
-      <button className="num" value={5}></button>
-      <button className="num" value={6}></button>
-      <button className="num" value={7}></button>
-      <button className="num" value={8}></button>
-      <button className="num" value={9}></button>
-      <button className="num" value={0}></button>
+      <Container>
+        <Row>
+        <Col md={4}><Button number = {1} /></Col>
+        <Col md={4}><Button number = {2} /></Col>
+        <Col md={4}><Button number = {3} /></Col>
+        </Row>
+        {/* <Row>
+        <Col><Button number = {4} /></Col>
+        <Col><Button number = {5} /></Col>
+        <Col><Button number = {6} /></Col>
+        </Row>
+        <Row>
+        <Col><Button number = {7} /></Col>
+        <Col><Button number = {8} /></Col>
+        <Col><Button number = {9} /></Col>
+        </Row> */}
+      </Container>
     </div>
-    )
-  }
+  )
+}
 
-
-ReactDOM.render(<Buttons />, document.getElementById("root"));
+export default Calculator;
+// ReactDOM.render(<Buttons />, document.getElementById("root"));
 

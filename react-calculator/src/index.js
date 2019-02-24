@@ -13,33 +13,9 @@ import * as serviceWorker from './serviceWorker';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-var Buttons;
-// var HandleClick; 
-Buttons = ({handleClick}) => {
-  return (
-    <div>
-      <button className="num" onClick={(e) => {handleClick(1)}}>1</button>
-      <button className="num" onClick={(e) => {handleClick(2)}}>2</button>
-      <button className="num" onClick={(e) => {handleClick(3)}}>3</button>
-      <button className="num" onClick={(e) => {handleClick(4)}}>4</button>
-      <button className="num" onClick={(e) => {handleClick(5)}}>5</button>
-      <button className="num" onClick={(e) => {handleClick(6)}}>6</button>
-      <button className="num" onClick={(e) => {handleClick(7)}}>7</button>
-      <button className="num" onClick={(e) => {handleClick(8)}}>8</button>
-      <button className="num" onClick={(e) => {handleClick(9)}}>9</button>
-      <button className="num" onClick={(e) => {handleClick(0)}}>0</button>
-    </div>
-  )
-}
+import Calculator from './components/Calculator';
 
-// HandleClick = ({handleClick}) => {
-//   return (
-//     console.log(handleClick)
-//   )
-// }
-
-
-ReactDOM.render(<Buttons handleClick={(num) => console.log(num)}/>, document.getElementById("root"));
+ReactDOM.render(<Calculator handleClick={(num) => console.log(num)}/>, document.getElementById("root"));
 
 
 serviceWorker.unregister();
