@@ -1,18 +1,21 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import Button from "./Button";
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Row, Container} from 'react-bootstrap';
+
+// const rowstyle = {
+//   height:'50px',
+//   width:'50px'
+// };
+
 
 const Calculator = () => {
   return (
     <div>
-      <Container>
-        <Row>
-        <Col md={4}><Button number = {1} /></Col>
-        <Col md={4}><Button number = {2} /></Col>
-        <Col md={4}><Button number = {3} /></Col>
+      <Container fluid={true}>
+        <Row noGutters={true}>
+        <Button number = {1} />
+        <Button number = {2} />
+        <Button number = {3} />
         </Row>
         {/* <Row>
         <Col><Button number = {4} /></Col>
@@ -24,11 +27,9 @@ const Calculator = () => {
         <Col><Button number = {8} /></Col>
         <Col><Button number = {9} /></Col>
         </Row> */}
-      </Container>
+        </Container>
     </div>
   )
 }
 
 export default Calculator;
-// ReactDOM.render(<Buttons />, document.getElementById("root"));
-

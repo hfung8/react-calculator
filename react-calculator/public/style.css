@@ -3,20 +3,13 @@
   height: 200px;
   width: 200px;
   color: white;
+  padding-left: 0px;
+  padding-right: 0px;
   font-size: 25px;
   background-color: grey;
   box-shadow: 3px -3px 7px rgba(0,0,0,0.6), inset 0px 50px 10px rgba(119, 66, 66, 0.6);
 }
 
-.calculatorHead {
-  font-size: 15px;
-  color: rgba(7, 5, 5, 0.6);
-}
-
-/* .calculatorFirstRow, .calculatorSecondRow, .calculatorThirdRow{
-  width: 600px;
-} */
-
-Container{
-  width:100px;
+.no-padding{
+  padding: 0px;
 }
