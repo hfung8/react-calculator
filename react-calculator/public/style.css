@@ -14,3 +14,16 @@
   padding-right:0 !important;
   padding-left:0 !important;
 }
+
+.container {
+  width: 250px !important;
+  border: solid 2px;
+  box-shadow: 3px -3px 7px rgba(0,0,0,0.6);
+  background: rgba(119, 66, 66, 0.6)
+}
+
+.input{
+  width: 250px !important;
+  border: solid 2px;
+  border-radius: 5px;
+}
