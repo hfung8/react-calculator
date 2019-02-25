@@ -2,12 +2,6 @@ import React from 'react';
 import Button from "./Button";
 import { Row, Container} from 'react-bootstrap';
 
-// const rowstyle = {
-//   height:'50px',
-//   width:'50px'
-// };
-
-
 const Calculator = () => {
   return (
     <div>
@@ -17,16 +11,16 @@ const Calculator = () => {
         <Button number = {2} />
         <Button number = {3} />
         </Row>
-        {/* <Row>
-        <Col><Button number = {4} /></Col>
-        <Col><Button number = {5} /></Col>
-        <Col><Button number = {6} /></Col>
+        <Row noGutters={true}>
+        <Button number = {4} />
+        <Button number = {5} />
+        <Button number = {6} />
         </Row>
-        <Row>
-        <Col><Button number = {7} /></Col>
-        <Col><Button number = {8} /></Col>
-        <Col><Button number = {9} /></Col>
-        </Row> */}
+        <Row noGutters={true}>
+        <Button number = {7} />
+        <Button number = {8} />
+        <Button number = {9} />
+        </Row>
         </Container>
     </div>
   )
