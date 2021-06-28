@@ -95,7 +95,7 @@ function Calculator() {
         <Button number = {"/"} onclick = {handleAction}/>
         </Row>
         </Container>
-        
+
     </div>
   )
 }
