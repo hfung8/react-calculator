@@ -1,0 +1,29 @@
+.num {
+  border-radius: 2px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 25px;
+  background-color: grey;
+  box-shadow: 3px -3px 7px rgba(0,0,0,0.6), inset 0px 50px 10px rgba(119, 66, 66, 0.6);
+}
+
+.no-gutter {
+  padding-right:0 !important;
+  padding-left:0 !important;
+}
+
+.container {
+  width: 250px !important;
+  border: solid 2px;
+  box-shadow: 3px -3px 7px rgba(0,0,0,0.6);
+  background: rgba(119, 66, 66, 0.6)
+}
+
+.input{
+  width: 250px !important;
+  border: solid 2px;
+  border-radius: 5px;
+}
